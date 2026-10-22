@@ -20,6 +20,9 @@
   "bugs": {
     "url": "https://github.com/LDKimy0420/dsh-bili-jingjing/issues"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "type": "module",
   "main": "index.js",
   "exports": {
