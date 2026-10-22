@@ -37,7 +37,7 @@
     "lib",
     "prompts",
     "vendor",
-"AGENTS.md",
+    "README.md",
     "selfcheck.mjs",
     "LICENSE",
     "NOTICE.md",
