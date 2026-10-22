@@ -18,7 +18,7 @@
 > DSH 插件：**每天替你刷一轮 B站** —— 它自己搜、**读字幕原文**判断、把值得的写成报告，特别值得的会留一条评论 **@ 你**。
 > **你收到的每一条 @，都是它先筛过一遍的。**
 
-## 这一版（0.2.2）比上游 0.1.18 多什么
+## 这一版（0.2.3）比上游 0.1.18 多什么
 
 > 这是**本地增强版**：主体功能全部沿用上游（[c1overzz/dsh-bili-scroll](https://github.com/c1overzz/dsh-bili-scroll)，MIT），
 > 下面这些是我们这边加上去的，已实测跑通。
@@ -40,15 +40,16 @@
    现在多了独立开关「定时检查有没有人回我」：开着就按间隔（**1~1440 分钟**，默认 30）主动去消息中心
    看「回复我的」，有新的才起一轮、只回那几条；默认只在峰谷时段查，也可以切成**全天候**。
    关着就是原版行为，不多花 token。
+8. **文档清理（0.2.3）** —— README 里的本机绝对路径换成占位符；安装备选链路指向本仓库。
 
 ## 装它（四条命令，任选一条）
 
 ```bash
 # A. 从本地目录装（开发/调试最方便，改完重启即生效）
-dsh plugin --profile web add link:E:\\dev\\AI-agent\\deepseek\\self_plugin\\dsh-bili-jingjing
+dsh plugin --profile web add link:<你解压出来的插件目录>
 
 # B. 从打包好的 tgz 装（发给别人用这个，或者挂 GitHub Release 让人下载）
-dsh plugin --profile web add file:E:\\dev\\AI-agent\\deepseek\\self_plugin\\dsh-bili-jingjing-0.2.2.tgz
+dsh plugin --profile web add file:<你下载的 tgz 的完整路径>
 
 # C. 从 GitHub 装（仓库根目录就是本包）
 dsh plugin --profile web add github:LDKimy0420/dsh-bili-jingjing
@@ -90,7 +91,7 @@ dsh plugin --profile web add dsh-bili-jingjing
 
 ```bash
 dsh plugin --profile web add dsh-bili-jingjing # 从 npm
-dsh plugin --profile web add github:c1overzz/dsh-bili-scroll   # 备选：直接从 GitHub
+dsh plugin --profile web add github:LDKimy0420/dsh-bili-jingjing   # 备选：直接从 GitHub
 ```
 （⭐ 最省事的一条：把仓库链接贴给你自己的 dsh，说「**帮我装这个插件**」，它会自己装。）
 
