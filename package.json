@@ -11,6 +11,15 @@
     "duty"
   ],
   "license": "MIT",
+  "author": "LDKimy0420",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LDKimy0420/dsh-bili-jingjing.git"
+  },
+  "homepage": "https://github.com/LDKimy0420/dsh-bili-jingjing#readme",
+  "bugs": {
+    "url": "https://github.com/LDKimy0420/dsh-bili-jingjing/issues"
+  },
   "type": "module",
   "main": "index.js",
   "exports": {
